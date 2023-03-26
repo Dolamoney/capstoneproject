@@ -1,0 +1,203 @@
+@import url('http://fonts.googleapis.com/css2?family=epilogue:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+:root{
+    /* colors */
+    --almost_white: hsl(0,0%,98%);
+    --almost_gray: hsl(0,0%,41%);
+    --almost_black: hsl(0,0%,8%);
+
+    /* Font size */
+    --fs-h1:2.5rem;
+    --fs-h2:1.85rem;
+    --fs-h3:1.25rem;
+    --fs-body: 16px;
+    --fs-small:0.8rem;
+
+}
+@media (max-width:375px){
+
+    :root{
+        /* Colors */
+        --almost_white: hsl(0,0%,98%);
+        --almost_gray: hsl(0,0%,41%);
+        --almost_black: hsl(0,0%,8%);
+    
+        /* Font size */
+        --fs-h1:10vw;
+        --fs-h2:1.85rem;
+        --fs-h3:1.25rem;
+        --fs-body: 16px;
+    }
+}
+    /* Bigger Screens */
+@media (min-width:768px){
+
+    :root{
+        /* Font Sizes */
+        --fs-h1:3rem;
+        --fs-h2:2.75rem;
+        --fs-h3:2.5rem;
+        --fs-body:1.0rem;
+        --img-inline:4rem;
+        --pd-block:2rem;
+
+    }
+}
+
+@media(min-width:1000px){
+    :root{
+
+        --fs-h1:4rem;
+        --fs-h2:3.75rem;
+        --fs-h3:2.5rem;
+        --fs-body:1.125rem;
+        --fs-inline:6rem;
+        --pd-block:4rem;
+    }
+}
+@media(min-width:1440px){
+
+    :roor{
+        /* Font Sizes */
+        --fs-h1:5.6rem;
+        --fs-h2:3.75rem;
+        --fs-h3:2.5rem;
+        --fs-body:1.125rem;
+        --fs-inline:8rem;
+        --pd-block:4rem;
+    }
+}
+
+body{
+    font-size: 16px;
+}
+
+.mobileheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.mobileheader #menutoggle{
+    display: none;
+}
+
+.mobileheader .menubuttoncontainer{
+    /* display:flex; */
+    height: 16px;
+    width:30px;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem; 
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.mobileheader .menubuttoncontainer .menubutton,
+.menubutton::before,
+.menubutton::after{
+    /* display: block; */
+    height:4px;
+    width:30px;
+    background-color: #000;
+    /* position:absolute; */
+    /* right: 1rem; */
+    transition: transform 400ms cubic-bezier(0.23,1,0.32,1);
+    z-index: 1000;
+}
+.menubutton::before{
+    display: block;
+    position:absolute;
+    content:"";
+    margin-block-start: -8px;
+}
+.menubutton::after{
+    display: block;
+    position:absolute;
+    content:"";
+    margin-block-start: 8px;
+}
+
+.mobileheader #menutoggle ~ .nav{
+    background-color: rgba(0,0, 0, 0.5);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-inline: 1rem;
+    bottom: 0;
+    color:rgb(29,27,27);
+    transform: translateX(120%);
+    transition: transform 500ms cubic-bezier(0.5,0,0.5,1);
+    z-index: 10;
+}
+.mobileheader #menutoggle ~ .nav .menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-block-start: 5rem;
+    padding-inline-start: 1rem;
+    background-color: var(--almost_white);
+
+}
+
+.mobileheader .nav .menu{
+    list-style: none;
+}
+.mobileheader #menutoggle ~ .nav .menu>li{
+    padding-block: 0.7rem;
+}
+.mobileheader #menutoggle ~ .nav .menu>li>a{
+    color: var(--medium_gray);
+    padding-inline: 0.7rem;
+}
+a{
+    color: var(--medium_gray);
+    text-decoration: none;
+    color: var(--almost_white);
+    font-size: 1rem;
+}
+.desktop .loginreg{
+    display: none;
+}
+.mobileheader .nav .mobile .loginreg{
+    display: flex;
+    position: relative;
+    margin: 10% auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.mobileheader .nav .mobile .loginreg a{
+    color: var(--medium_gray);
+    
+}
+
+/* LANDING PAGE IMAGE STYLE */
+.mainsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.Image{
+
+}
+div.Image img{
+    max-width: 100%;
+
+}

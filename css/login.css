@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    /* min-height: 100%; */
+    /* background-color: burlywood; */
+}
+
+body .imagebox{
+    background-image: url("../image/Lady-with-laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(192, 167, 175, 0.5);
+    background-blend-mode: lighten;
+    order: 2;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+.imagebox img{
+    display: block;
+    max-width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* Container */
+.container{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    /* border: 1px;
+    margin: auto;
+    margin-top: 50px; */
+    
+}
+
+/* Login form */
+.form{
+    /* display: flex;
+    flex-direction: column; */
+    width: 50%;
+    /* align-items: center;
+    color: black */
+}
+.form h2{
+    font: size 1.5em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.form p{
+    font-size: medium;
+    font-weight: 200;
+}
+
+.inputbox{
+    margin-bottom: 20px;
+}
+
+.inputbox span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.inputbox input{
+     width: 100%;
+     padding: 10px 20px;
+     outline: none;
+     font-weight: 400;
+     border: 1px solid #607d8b;
+     font-size: 16px;
+     letter-spacing: 1px;
+     color: #607d8b;
+     background: transparent;
+     border-radius: 10px;
+}
+
+.inputbox input[type="submit"] {
+    background: #ff45ff;
+    color:#fff;
+    outline: none;
+    border:none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.inputbox input[type="submit"]:hover{
+    background-color: #f53677;
+}
+
+.remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.inputbox p{
+    color: #607d8b;
+}
+
+.inputbox p a{
+    color: #ff4584;
+}
+#submit{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border: 20px;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #750000;
+}
+.form a{
+    text-decoration: none;
+    color: black;
+    margin-top:20px;
+}
+.form a:hover{
+    color:#750000;
+}
+
+.imagebox{
+    background-image: url("../image/Lady-with-laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(192, 167, 175, 0.5);
+    background-blend-mode: lighten;
+    order: 2;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+.imagebox img{
+    display: block;
+    max-width: 100%;
+    height:100%;
+    object-fit: cover;
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    display: block;
+    height: 100vh;
+}
+
+section .Image{
+    background-image: url("../image/Onboarding-Image.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center unset;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section .Image::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(192, 167, 175, 0.5);
+}
+
+ section .Textcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+section .Textcon h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+     
+}
+
+section .Textcon p{
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+}
+section .Textcon button{
+    padding: 12px 22px;
+    margin-top: 30px;
+    font-size: 22px;
+    background-color: orange;
+    color:white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}

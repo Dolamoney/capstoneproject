@@ -10,6 +10,7 @@
     --almost_white: hsl(0,0%,98%);
     --almost_gray: hsl(0,0%,41%);
     --almost_black: hsl(0,0%,8%);
+    --almost_accent: #FF5F05;
 
     /* Font size */
     --fs-h1:2.5rem;
@@ -62,7 +63,7 @@
 }
 @media(min-width:1440px){
 
-    :roor{
+    :root{
         /* Font Sizes */
         --fs-h1:5.6rem;
         --fs-h2:3.75rem;
@@ -91,7 +92,7 @@ body{
 
 .mobileheader .menubuttoncontainer{
     /* display:flex; */
-    height: 16px;
+    /* height: 16px; */
     width:30px;
     cursor: pointer;
     position: absolute;
@@ -200,4 +201,155 @@ div.Image{
 div.Image img{
     max-width: 100%;
 
+}
+
+.textcontent{
+    padding-block-start: 2rem;
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+.textcontent h1{
+    text-align: center;
+    color: var(--almost_black);
+}
+.textcontent p{
+    margin-block-start: 1rem;
+    text-align: center;
+    color: var(--almost_gray);
+}
+.textcontent .cta{
+    background: #FB9101;
+    margin-block-start: 1rem;
+    text-align: center;
+    color: var(--almost_white);
+    display: block;
+    padding-block: 1rem;
+    border-radius:10px;
+}
+
+footer .footer_content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+
+}
+
+footer .footer_content .content_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-block-start: 1.5rem ;
+
+}
+footer .footer_content .content_1 .logo_sms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+ .linkedin,.twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--almost_accent) ;
+    border-radius: 100%;
+    padding: .7rem;
+}
+
+footer .footer_content .content_1 .address{
+    margin-inline: auto;
+    
+}
+footer .footer_content .content_1 .address p{
+    text-align: left;
+    line-height: 1.5;
+    margin-block: 1rem;
+    color: var(--almost_gray);
+
+}
+i{
+    margin-inline-end: 1rem;
+}
+
+/* HOW IT WORKS STYLES */
+
+footer .footer_content .content_2 .how_it_works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 1rem;
+}
+
+.how_it_works .how_it_works_title{
+    text-align: center;
+    color: var(--almost_accent);
+    
+}
+.how_it_works .how_it_works_title h3{
+    font-size: var(--fs-h3);
+}
+.how_it_works .how_it_works_list li{
+    list-style: none;
+   
+}
+
+
+/* HOW IT WORKS END HERE */
+
+/* BUSINESS STYLES BELOW */
+
+footer .footer_content .content_2 .business{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.business .business_title{
+    text-align: center;
+    color: var(--almost_accent);
+  
+}
+.business .business_title h3{
+    font-size: var(--fs-h3);
+}
+.business .business_list li{
+    list-style: none;
+    
+}
+
+/* CONTACT STYLES BELOW */
+
+footer .footer_content .content_2 .Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact .Contact_title{
+    text-align: center;
+    color: var(--almost_accent);
+  
+}
+.Contact .Contact_title h3{
+    font-size: var(--fs-h3);
+}
+.Contact .Contact_list li{
+    list-style: none;
+    margin-block: 1rem;
+}
+li{
+    text-align: center;
+    margin-block: 0.7rem;
+}
+
+.how_it_works,.business,.Contact{
+    margin-block-end: 1rem;
 }
